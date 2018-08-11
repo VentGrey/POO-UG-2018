@@ -1,0 +1,23 @@
+[book]
+authors = ["Omar Jair Purata Funes, Jorge Alberto Soria Alcaraz, Marco Aurelio Sotelo Figueroa"]
+description = "Apuntes hechos para la clase de Programación Orientada a Objetos"
+multilingual = false
+src = "src"
+title = "Programación Orientada a Objetos"
+
+[output.html]
+mathjax-support = true
+
+[output.html.playpen]
+editable = true
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+expand = true
+
+[build]
+create-missing = true
+
