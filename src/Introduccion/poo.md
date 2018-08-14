@@ -19,4 +19,4 @@ Las personas que han contribuido con la edición del pseudo-libro son:
 
 Todo código o texto usado aquí es propiedad de la Universidad de Guanajuato.
 
-![logo] ()
+![logo](https://blogs.ugto.mx/ednebt/wp-content/uploads/sites/45/2018/04/escudo-horizontal-png.png)
