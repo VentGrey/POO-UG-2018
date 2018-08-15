@@ -36,4 +36,7 @@ Las convenciones de nombres recomiendan que las clases de Java comienzen con un
 caracter en mayúsculas y que se encuentre en *"Nomeclatura camino"*
 (En la cual la primera letra de cada palabra debera ser una mayúscula).
 
+## Proceso de compilación
 
+El compilador, una vez procesa el archivo `.java` éste generará un archivo del
+tipo `bytecode`
