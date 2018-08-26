@@ -15,8 +15,9 @@ valores que los tipos primitivos pueden tomar en Java.
 | Tipo | Representación numérica | Rango de valores | Valor por defecto |
 |------|-------------------------|------------------|-------------------|
 |booleano| No tiene | `true` & `false` | `false` |
-| byte | 8 bit con signo | \\(-27 hasta 27 -1\\) | 0 |
-
+| byte | 8 bits con signo | \\(-27 \\) hasta \\(27 - 1\\) | 0 |
+| short | 16 bits con signo |\\(-128 \\) hasta \\( +27 \\) & \\(-32,768 \\) hasta \\(+32,767\\)  | 0 |
+| int | 32 bits con signo |\\(-231 \\) hasta \\(231 - 1\\) & \\(-2,147,483,648 \\) hasta \\(+2,147,483,647\\) | 0 |
 
 ## El tipo caracter
 
