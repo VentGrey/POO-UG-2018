@@ -54,4 +54,28 @@ char backslash = '\\';
 char unicode = '\uXXXX' // Siendo XXXX el valor del caracter unicode que quieras representar.
 ```
 
+## El tipo float
+
+Un flotante (`float`) es un número de punto flotante de 32 bits de presición
+simple.
+
+En Java los decimales se tratan como `double` por defecto.
+Para crear un `float`, simplemente se le agrega una `f` al decimal literal.
+
+```java
+double ejemplodoble = 0.5; //Sin  f después de los dígitos == double
+float ejemplofloat = 0.5f; //Con f después de los dígitos == float
+
+float pedro = 92.7f; //El es pedro el flotante...
+float pedro_positivo = 89.2f; //Puede ser positivo :)
+float pedro_negativo = 45.5f; //O negativo :(
+float pedro_entero = 23.0f; //Puede ser un número entero (no un int)
+float pedro_diminuto = 0.243; //Puede ser un valor fraccionario menor a 0
+```
+> Los flotantes pueden manejar 5 operaciones aritméticas comunes:
+> Suma (+)
+> Resta (-)
+> Multiplicación (*)
+> División (/)
+
 
