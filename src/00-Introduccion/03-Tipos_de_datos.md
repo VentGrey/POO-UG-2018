@@ -158,4 +158,22 @@ El valor por defecto de los booleanos es `false`.
 boolean defecto; //Arrojará un false
 ```
 
+## El tipo byte
+
+En Java un byte es un entero de 8 bits con signo. Puede almacenar un valor mínimo
+de \\(-27 (-128)\\), y un valor máximo de \\(27 -1 (127)\\)
+
+```java
+byte ejemplo = -36;
+byte positivo = 86;
+byte pequeño = 8;
+
+// Valores máximos y mínimos
+
+byte mayor = Byte.MAX_VALUE; // 127
+byte menor = Byte.MIN_VALUE; // -128
+```
+
+El valor por defecto de un `byte` es `0`.
+
 
