@@ -78,4 +78,46 @@ float pedro_diminuto = 0.243; //Puede ser un valor fraccionario menor a 0
 > Multiplicación (*)
 > División (/)
 
+## El tipo entero
+
+No podemos hablar de puntos flotantes sin ver el tipo primitivo llamado `int` el
+cual es un tipo de dato primitivo que retiene valores de números completos, es
+decir, números que no poseen un aditamento decimal o fraccionario.
+
+Citando al API de Java:
+> "La clase Integer envuelve a un calor del tipo primitivo int en un objeto. Un
+> objeto de tipo Integer contiene un solo campo cuyo tipo es `int`.
+
+Los enteros por defecto ocupan 32 bits y son con signo, pueden guardar valores
+desde el mínimo \\(-231\\) hasta un valor máximo de \\(231-1\\).
+
+```java
+int ejemplo = -42; //El significado de la vida, el universo y todo para los negativos.
+int otroejemplo = 248;
+int entero = 73;
+
+int suma_de_enteros = otroejemplo + entero;
+int resta_de_enteros = ejemplo - entero;
+```
+
+## El tipo doble
+
+Un `double` es un tipo de dato de punto flotante con doble precisión.
+
+```java
+double ejemplo = -7421.34; //Puede ser negativo
+double otroejemplo = 2093.59; //O positivo
+```
+Como curiosidad, por la manera en la que los números de punto flotante se
+guardan muchos de éstos no poseen una representación exacta:
+
+```java
+double noexacto = 1.32 - 0.42; //El resultado debería ser 0.9
+System.out.println(noexacto); //0.90000000000000001
+```
+
+Si queremos usar un tipo de dato para guardar valores de precisión aceptable
+un `double` es nuestra mejor opción, aunque no se recomienda si queremos
+valores con precisión alta, para ello necesitamos la clase `BigDecimal`.
+
 
