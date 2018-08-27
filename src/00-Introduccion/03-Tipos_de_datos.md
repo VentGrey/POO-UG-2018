@@ -139,3 +139,23 @@ long numeroenorme = 549755813888L;
 
 > Además, la "L" que se agrega al final de la cifra no es sensible a mayúsculas
 > o minúsculas, por lo que usar "l" también es válido.
+
+## El tipo booleano
+
+Un `bool` (booleano) puede guardar uno de dos valores, sea `verdadero` ó `falso`.
+
+```java
+boolean ejemplo = true;
+System.out.println("ejemplo = " + ejemplo); // true
+
+boolean ejemplo2 = false;
+System.out.println("ejemplo2 = " + ejemplo2); // false
+```
+
+El valor por defecto de los booleanos es `false`.
+
+```java
+boolean defecto; //Arrojará un false
+```
+
+
