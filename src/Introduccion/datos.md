@@ -120,4 +120,24 @@ Si queremos usar un tipo de dato para guardar valores de precisión aceptable
 un `double` es nuestra mejor opción, aunque no se recomienda si queremos
 valores con precisión alta, para ello necesitamos la clase `BigDecimal`.
 
+## El tipo long
+
+El tipo `long` es un entero de 64 bits con signo. (Desde Java 8 el tipo puede
+ser usado con signo o sin signo).
+
+```java
+long ejemplo = -42;
+long ejemplo2 = 285;
+```
+
+> Al igual que los flotantes, podemos agregar una "L" después del número
+> para convertirlo a un `long`.
+
+```java
+long numeroenorme = 549755813888L;
+```
+
+> Además, la "L" que se agrega al final de la cifra no es sensible a mayúsculas
+> o minúsculas, por lo que usar "l" también es válido.
+
 
