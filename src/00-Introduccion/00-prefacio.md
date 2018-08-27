@@ -6,7 +6,7 @@ POO-200SIA-2018
 
 No es mas que un recopilatorio de lo visto en clase con algunas cosas
 agregadas por mi para mejorar la experiencia de estudio, todos pueden contribuir
-en siguiendo las guías del siguiente [enlace] (TODO).
+en siguiendo las guías del archivo `contributing.md`.
 
 ## Contributores
 
