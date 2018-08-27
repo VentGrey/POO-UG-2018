@@ -176,4 +176,15 @@ byte menor = Byte.MIN_VALUE; // -128
 
 El valor por defecto de un `byte` es `0`.
 
+## El tipo short
+
+Un `short` es un entero de 16 bits con signo, posee un valor mínimo de \\(-215 (-32,768)\\) y un valor máximo de \\(215 -1 (32,767)\\).
+
+```java
+short ejemplo = -48;
+short ejemplo2 = 987;
+```
+
+El valor por defecto de un `short` es `0`.
+
 
