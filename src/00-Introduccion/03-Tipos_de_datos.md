@@ -187,4 +187,25 @@ short ejemplo2 = 987;
 
 El valor por defecto de un `short` es `0`.
 
+## Cadenas de carácteres
+
+A diferencia de otros lenguajes de programación como C, Java posee la
+habilidad de manejar cadenas de texto, las cuales se resumen en ser un
+arreglo finito o infinito de caracteres. **NO SON UN TIPO DE DATO PRIMITIVO**.
+
+Están almacenadas en la clase (`java.lang.String`).
+
+En Java las Strings son inmutables, eso significa que una vez que el constructor
+de un objeto termina de ejecutarse, la instancia no se puede alterar.
+
+Algo útil cuando queremos pasar referencias a los objetos cercanos.
+
+Para declarar cadenas de carácteres en Java solo usamos la palabra reservada
+`String`.
+
+```java
+String ejemplo = "Las cadenas en Java son geniales!";
+String pregunta = "¿o no?";
+```
+
 
