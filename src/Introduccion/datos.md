@@ -139,5 +139,3 @@ long numeroenorme = 549755813888L;
 
 > Además, la "L" que se agrega al final de la cifra no es sensible a mayúsculas
 > o minúsculas, por lo que usar "l" también es válido.
-
-
