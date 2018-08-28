@@ -1,1 +1,0 @@
-# Propagación de exepciones

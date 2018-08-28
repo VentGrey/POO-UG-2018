@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Clases y objetos - Programación Orientada a Objetos</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Apuntes hechos para la clase de Programación Orientada a Objetos">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">var path_to_root = "../";</script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="../00-Introduccion/00-prefacio.html"><strong aria-hidden="true">1.</strong> Programación orientada a objetos</a></li><li><a href="../00-Introduccion/01-intro.html"><strong aria-hidden="true">2.</strong> Introducción a la programación</a></li><li><ol class="section"><li><a href="../00-Introduccion/02-Estructura.html"><strong aria-hidden="true">2.1.</strong> Estructura de un programa</a></li><li><a href="../00-Introduccion/03-Tipos_de_datos.html"><strong aria-hidden="true">2.2.</strong> Tipos de datos</a></li><li><a href="../00-Introduccion/04-condicionales.html"><strong aria-hidden="true">2.3.</strong> Condicionales</a></li><li><a href="../00-Introduccion/05-ciclos.html"><strong aria-hidden="true">2.4.</strong> Ciclos</a></li></ol></li><li><a href="../01-Objetos/00-paradigma.html"><strong aria-hidden="true">3.</strong> Paradigma de programación orientada a objetos</a></li><li><ol class="section"><li><a href="../01-Objetos/01-clases_objetos.html" class="active"><strong aria-hidden="true">3.1.</strong> Clases y objetos</a></li><li><a href="../01-Objetos/02-atributos_metodos.html"><strong aria-hidden="true">3.2.</strong> Atributos y métodos</a></li><li><a href="../01-Objetos/03-valores.html"><strong aria-hidden="true">3.3.</strong> Argumentos de los métodos y retorno de valores</a></li><li><a href="../01-Objetos/04-estaticos.html"><strong aria-hidden="true">3.4.</strong> Métodos y atributos estáticos</a></li><li><a href="../01-Objetos/05-sobreescritura.html"><strong aria-hidden="true">3.5.</strong> Sobre escritura de métodos</a></li><li><a href="../01-Objetos/06-initobjetos.html"><strong aria-hidden="true">3.6.</strong> Declaración, instanciación e inicialización de objetos</a></li><li><a href="../01-Objetos/07-encapsulamiento.html"><strong aria-hidden="true">3.7.</strong> Encapsulamiento</a></li><li><a href="../01-Objetos/08-control_acceso.html"><strong aria-hidden="true">3.8.</strong> Control de acceso</a></li><li><a href="../01-Objetos/09-sobrecarga.html"><strong aria-hidden="true">3.9.</strong> Sobrecarga de constructores</a></li><li><a href="../01-Objetos/10-herencia.html"><strong aria-hidden="true">3.10.</strong> Herencia</a></li><li><a href="../11-Objetos/12-subclases.html"><strong aria-hidden="true">3.11.</strong> Subclases &amp; Superclases</a></li><li><a href="../01-Objetos/12-sobresuper.html"><strong aria-hidden="true">3.12.</strong> Sobre escritura de los métodos de la superclase</a></li><li><a href="../01-Objetos/14-polimorfismo.html"><strong aria-hidden="true">3.13.</strong> Polimorfismo</a></li><li><a href="../01-Objetos/15-ClasesAbstractas.html"><strong aria-hidden="true">3.14.</strong> Clases abstractas</a></li><li><a href="../01-Objetos/16-interfaces.html"><strong aria-hidden="true">3.15.</strong> Interfaces</a></li></ol></li><li><a href="../02-Excepciones/00-Manejo.html"><strong aria-hidden="true">4.</strong> Manejo de excepciones</a></li><li><ol class="section"><li><a href="../02-Excepciones/01-Propagacion.html"><strong aria-hidden="true">4.1.</strong> Propagación de excepciones</a></li><li><a href="../02-Excepciones/02-Atrapando.html"><strong aria-hidden="true">4.2.</strong> Atrapando y lanzando excepciones</a></li><li><a href="../02-Excepciones/03-Manejando.html"><strong aria-hidden="true">4.3.</strong> Manejando múltiples excepciones</a></li></ol></li><li><a href="../03-Bibliotecas/00-Bibliotecas.html"><strong aria-hidden="true">5.</strong> Librerías</a></li><li><ol class="section"><li><a href="../03-Bibliotecas/01-creacion.html"><strong aria-hidden="true">5.1.</strong> Creación de librerías</a></li><li><a href="../03-Bibliotecas/02-extern.html"><strong aria-hidden="true">5.2.</strong> Uso de librerías externas</a></li><li><a href="../03-Bibliotecas/03-files.html"><strong aria-hidden="true">5.3.</strong> Manejo de archivos</a></li><li><a href="../03-Bibliotecas/04-Archivos.html"><strong aria-hidden="true">5.4.</strong> Archivos de texto</a></li><li><a href="../03-Bibliotecas/05-Binarios.html"><strong aria-hidden="true">5.5.</strong> Archivos binarios</a></li></ol></li><li><a href="../04-GUI/00-Grafica.html"><strong aria-hidden="true">6.</strong> Programación Gráfica</a></li><li><ol class="section"><li><a href="../04-GUI/01-Formas.html"><strong aria-hidden="true">6.1.</strong> Creación de formas</a></li><li><a href="../04-GUI/02-Controles.html"><strong aria-hidden="true">6.2.</strong> Manejo de Controles Graficos</a></li><li><a href="../04-GUI/03-MVC.html"><strong aria-hidden="true">6.3.</strong> Modelo vista controlador</a></li></ol></li><li><a href="../05-Reportes/00-reportes.html"><strong aria-hidden="true">7.</strong> Creación de reportes</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Programación Orientada a Objetos</h1> 
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#clases-y-objetos" id="clases-y-objetos"><h1>Clases y objetos</h1></a>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../01-Objetos/00-paradigma.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../01-Objetos/02-atributos_metodos.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../01-Objetos/00-paradigma.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../01-Objetos/02-atributos_metodos.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

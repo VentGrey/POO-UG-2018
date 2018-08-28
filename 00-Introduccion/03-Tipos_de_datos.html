@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Tipos de datos - Programación Orientada a Objetos</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Apuntes hechos para la clase de Programación Orientada a Objetos">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">var path_to_root = "../";</script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="../00-Introduccion/00-prefacio.html"><strong aria-hidden="true">1.</strong> Programación orientada a objetos</a></li><li><a href="../00-Introduccion/01-intro.html"><strong aria-hidden="true">2.</strong> Introducción a la programación</a></li><li><ol class="section"><li><a href="../00-Introduccion/02-Estructura.html"><strong aria-hidden="true">2.1.</strong> Estructura de un programa</a></li><li><a href="../00-Introduccion/03-Tipos_de_datos.html" class="active"><strong aria-hidden="true">2.2.</strong> Tipos de datos</a></li><li><a href="../00-Introduccion/04-condicionales.html"><strong aria-hidden="true">2.3.</strong> Condicionales</a></li><li><a href="../00-Introduccion/05-ciclos.html"><strong aria-hidden="true">2.4.</strong> Ciclos</a></li></ol></li><li><a href="../01-Objetos/00-paradigma.html"><strong aria-hidden="true">3.</strong> Paradigma de programación orientada a objetos</a></li><li><ol class="section"><li><a href="../01-Objetos/01-clases_objetos.html"><strong aria-hidden="true">3.1.</strong> Clases y objetos</a></li><li><a href="../01-Objetos/02-atributos_metodos.html"><strong aria-hidden="true">3.2.</strong> Atributos y métodos</a></li><li><a href="../01-Objetos/03-valores.html"><strong aria-hidden="true">3.3.</strong> Argumentos de los métodos y retorno de valores</a></li><li><a href="../01-Objetos/04-estaticos.html"><strong aria-hidden="true">3.4.</strong> Métodos y atributos estáticos</a></li><li><a href="../01-Objetos/05-sobreescritura.html"><strong aria-hidden="true">3.5.</strong> Sobre escritura de métodos</a></li><li><a href="../01-Objetos/06-initobjetos.html"><strong aria-hidden="true">3.6.</strong> Declaración, instanciación e inicialización de objetos</a></li><li><a href="../01-Objetos/07-encapsulamiento.html"><strong aria-hidden="true">3.7.</strong> Encapsulamiento</a></li><li><a href="../01-Objetos/08-control_acceso.html"><strong aria-hidden="true">3.8.</strong> Control de acceso</a></li><li><a href="../01-Objetos/09-sobrecarga.html"><strong aria-hidden="true">3.9.</strong> Sobrecarga de constructores</a></li><li><a href="../01-Objetos/10-herencia.html"><strong aria-hidden="true">3.10.</strong> Herencia</a></li><li><a href="../11-Objetos/12-subclases.html"><strong aria-hidden="true">3.11.</strong> Subclases &amp; Superclases</a></li><li><a href="../01-Objetos/12-sobresuper.html"><strong aria-hidden="true">3.12.</strong> Sobre escritura de los métodos de la superclase</a></li><li><a href="../01-Objetos/14-polimorfismo.html"><strong aria-hidden="true">3.13.</strong> Polimorfismo</a></li><li><a href="../01-Objetos/15-ClasesAbstractas.html"><strong aria-hidden="true">3.14.</strong> Clases abstractas</a></li><li><a href="../01-Objetos/16-interfaces.html"><strong aria-hidden="true">3.15.</strong> Interfaces</a></li></ol></li><li><a href="../02-Excepciones/00-Manejo.html"><strong aria-hidden="true">4.</strong> Manejo de excepciones</a></li><li><ol class="section"><li><a href="../02-Excepciones/01-Propagacion.html"><strong aria-hidden="true">4.1.</strong> Propagación de excepciones</a></li><li><a href="../02-Excepciones/02-Atrapando.html"><strong aria-hidden="true">4.2.</strong> Atrapando y lanzando excepciones</a></li><li><a href="../02-Excepciones/03-Manejando.html"><strong aria-hidden="true">4.3.</strong> Manejando múltiples excepciones</a></li></ol></li><li><a href="../03-Bibliotecas/00-Bibliotecas.html"><strong aria-hidden="true">5.</strong> Librerías</a></li><li><ol class="section"><li><a href="../03-Bibliotecas/01-creacion.html"><strong aria-hidden="true">5.1.</strong> Creación de librerías</a></li><li><a href="../03-Bibliotecas/02-extern.html"><strong aria-hidden="true">5.2.</strong> Uso de librerías externas</a></li><li><a href="../03-Bibliotecas/03-files.html"><strong aria-hidden="true">5.3.</strong> Manejo de archivos</a></li><li><a href="../03-Bibliotecas/04-Archivos.html"><strong aria-hidden="true">5.4.</strong> Archivos de texto</a></li><li><a href="../03-Bibliotecas/05-Binarios.html"><strong aria-hidden="true">5.5.</strong> Archivos binarios</a></li></ol></li><li><a href="../04-GUI/00-Grafica.html"><strong aria-hidden="true">6.</strong> Programación Gráfica</a></li><li><ol class="section"><li><a href="../04-GUI/01-Formas.html"><strong aria-hidden="true">6.1.</strong> Creación de formas</a></li><li><a href="../04-GUI/02-Controles.html"><strong aria-hidden="true">6.2.</strong> Manejo de Controles Graficos</a></li><li><a href="../04-GUI/03-MVC.html"><strong aria-hidden="true">6.3.</strong> Modelo vista controlador</a></li></ol></li><li><a href="../05-Reportes/00-reportes.html"><strong aria-hidden="true">7.</strong> Creación de reportes</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Programación Orientada a Objetos</h1> 
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#tipos-de-dato-en-java" id="tipos-de-dato-en-java"><h1>Tipos de dato en Java</h1></a>
+<p>En Java existen diferentes tipos de datos los cuales pueden ser primitivos o
+propios del lenguaje.</p>
+<p>Java posee 8 tipos de dato primitivos: <code>byte</code>, <code>short</code>, <code>int</code>, <code>long</code>, <code>char</code>
+<code>boolean</code>, <code>float</code> y <code>double</code>.</p>
+<a class="header" href="#la-tabla-de-los-tipos" id="la-tabla-de-los-tipos"><h2>La tabla de los tipos</h2></a>
+<p>Es mejor ejemplificar que solo decir, aquí hay una tabla con todos los rangos de
+valores que los tipos primitivos pueden tomar en Java.</p>
+<table><thead><tr><th> Tipo </th><th> Representación numérica </th><th> Rango de valores </th><th> Valor por defecto </th></tr></thead><tbody>
+<tr><td>booleano</td><td> No tiene </td><td> <code>true</code> &amp; <code>false</code> </td><td> <code>false</code> </td></tr>
+<tr><td> byte </td><td> 8 bits con signo </td><td> \(-27 \) hasta \(27 - 1\) </td><td> 0 </td></tr>
+<tr><td> short </td><td> 16 bits con signo </td><td>\(-128 \) hasta \( +27 \) &amp; \(-32,768 \) hasta \(+32,767\)  </td><td> 0 </td></tr>
+<tr><td> int </td><td> 32 bits con signo </td><td>\(-231 \) hasta \(231 - 1\) &amp; \(-2,147,483,648 \) hasta \(+2,147,483,647\) </td><td> 0 </td></tr>
+<tr><td> long </td><td> 64 bits con signo </td><td>\(-263 \) hasta \(263 - 1\) &amp; \(-9,223,372,036,854,775,808 \) hasta \(9,2223,372,036,854,775,807\))</td><td> 0L </td></tr>
+<tr><td> float </td><td> punto flotante de 32 bits </td><td>\(1.401298464e-45 \) hasta\(3.402823466e+38 \) (positivo o negativo) </td><td> 0.0F</td></tr>
+<tr><td> double </td><td> punto flotante de 64 bits </td><td>\(4.940656458411246544e-324d\) hasta \(1.79769313486231570e+308d\) (positivo o negativo) </td><td> 0.0D </td></tr>
+<tr><td> char </td><td> 16 bits sin signo </td><td>\(0\) hasta \(216-1\) &amp; \(0 \) hasta \(65,535\)</td><td> 0 </td></tr>
+</tbody></table>
+<blockquote>
+<p>Notas:
+Java 8  y posterior provee métodos para realizar operaciones aritméticas sin signo en <code>int</code> y <code>long</code>.
+Un carácter convencionalmente representa una unidad Unicode/UTF-16
+Aunque el booleano contiene solo un bit de información, su tamaño en la memoria varia dependiendo de la JVM.</p>
+</blockquote>
+<a class="header" href="#el-tipo-carácter" id="el-tipo-carácter"><h2>El tipo carácter</h2></a>
+<p>El tipo <code>char</code> nos permite guardar un único carácter Unicode de 16 bits en memoria
+. Dicho carácter debera ser rodeado por comillas simples.</p>
+<pre><code class="language-java">char caracter1 = 'a';
+char caracter2 = '4';
+char caracter3 = 65; // caracter3 == A
+</code></pre>
+<p>Asimismo podemos utilizar otras secuencias de escape:</p>
+<pre><code class="language-java">char tab = '\t';
+char backspace = '\b';
+char newline = '\n';
+char Carriagereturn = '\r';
+char formfeed = '\f';
+char singlequote = '\'';
+char doublequote = '\&quot;';
+char backslash = '\\';
+char unicode = '\uXXXX' // Siendo XXXX el valor del caracter unicode que quieras representar.
+</code></pre>
+<a class="header" href="#el-tipo-float" id="el-tipo-float"><h2>El tipo float</h2></a>
+<p>Un flotante (<code>float</code>) es un número de punto flotante de 32 bits de presición
+simple.</p>
+<p>En Java los decimales se tratan como <code>double</code> por defecto.
+Para crear un <code>float</code>, simplemente se le agrega una <code>f</code> al decimal literal.</p>
+<pre><code class="language-java">double ejemplodoble = 0.5; //Sin  f después de los dígitos == double
+float ejemplofloat = 0.5f; //Con f después de los dígitos == float
+
+float pedro = 92.7f; //El es pedro el flotante...
+float pedro_positivo = 89.2f; //Puede ser positivo :)
+float pedro_negativo = 45.5f; //O negativo :(
+float pedro_entero = 23.0f; //Puede ser un número entero (no un int)
+float pedro_diminuto = 0.243; //Puede ser un valor fraccionario menor a 0
+</code></pre>
+<blockquote>
+<p>Los flotantes pueden manejar 5 operaciones aritméticas comunes:
+Suma (+)
+Resta (-)
+Multiplicación (*)
+División (/)</p>
+</blockquote>
+<a class="header" href="#el-tipo-entero" id="el-tipo-entero"><h2>El tipo entero</h2></a>
+<p>No podemos hablar de puntos flotantes sin ver el tipo primitivo llamado <code>int</code> el
+cual es un tipo de dato primitivo que retiene valores de números completos, es
+decir, números que no poseen un aditamento decimal o fraccionario.</p>
+<p>Citando al API de Java:</p>
+<blockquote>
+<p>&quot;La clase Integer envuelve a un calor del tipo primitivo int en un objeto. Un
+objeto de tipo Integer contiene un solo campo cuyo tipo es <code>int</code>.</p>
+</blockquote>
+<p>Los enteros por defecto ocupan 32 bits y son con signo, pueden guardar valores
+desde el mínimo \(-231\) hasta un valor máximo de \(231-1\).</p>
+<pre><code class="language-java">int ejemplo = -42; //El significado de la vida, el universo y todo para los negativos.
+int otroejemplo = 248;
+int entero = 73;
+
+int suma_de_enteros = otroejemplo + entero;
+int resta_de_enteros = ejemplo - entero;
+</code></pre>
+<a class="header" href="#el-tipo-doble" id="el-tipo-doble"><h2>El tipo doble</h2></a>
+<p>Un <code>double</code> es un tipo de dato de punto flotante con doble precisión.</p>
+<pre><code class="language-java">double ejemplo = -7421.34; //Puede ser negativo
+double otroejemplo = 2093.59; //O positivo
+</code></pre>
+<p>Como curiosidad, por la manera en la que los números de punto flotante se
+guardan muchos de éstos no poseen una representación exacta:</p>
+<pre><code class="language-java">double noexacto = 1.32 - 0.42; //El resultado debería ser 0.9
+System.out.println(noexacto); //0.90000000000000001
+</code></pre>
+<p>Si queremos usar un tipo de dato para guardar valores de precisión aceptable
+un <code>double</code> es nuestra mejor opción, aunque no se recomienda si queremos
+valores con precisión alta, para ello necesitamos la clase <code>BigDecimal</code>.</p>
+<a class="header" href="#el-tipo-long" id="el-tipo-long"><h2>El tipo long</h2></a>
+<p>El tipo <code>long</code> es un entero de 64 bits con signo. (Desde Java 8 el tipo puede
+ser usado con signo o sin signo).</p>
+<pre><code class="language-java">long ejemplo = -42;
+long ejemplo2 = 285;
+</code></pre>
+<blockquote>
+<p>Al igual que los flotantes, podemos agregar una &quot;L&quot; después del número
+para convertirlo a un <code>long</code>.</p>
+</blockquote>
+<pre><code class="language-java">long numeroenorme = 549755813888L;
+</code></pre>
+<blockquote>
+<p>Además, la &quot;L&quot; que se agrega al final de la cifra no es sensible a mayúsculas
+o minúsculas, por lo que usar &quot;l&quot; también es válido.</p>
+</blockquote>
+<a class="header" href="#el-tipo-booleano" id="el-tipo-booleano"><h2>El tipo booleano</h2></a>
+<p>Un <code>bool</code> (booleano) puede guardar uno de dos valores, sea <code>verdadero</code> ó <code>falso</code>.</p>
+<pre><code class="language-java">boolean ejemplo = true;
+System.out.println(&quot;ejemplo = &quot; + ejemplo); // true
+
+boolean ejemplo2 = false;
+System.out.println(&quot;ejemplo2 = &quot; + ejemplo2); // false
+</code></pre>
+<p>El valor por defecto de los booleanos es <code>false</code>.</p>
+<pre><code class="language-java">boolean defecto; //Arrojará un false
+</code></pre>
+<a class="header" href="#el-tipo-byte" id="el-tipo-byte"><h2>El tipo byte</h2></a>
+<p>En Java un byte es un entero de 8 bits con signo. Puede almacenar un valor mínimo
+de \(-27 (-128)\), y un valor máximo de \(27 -1 (127)\)</p>
+<pre><code class="language-java">byte ejemplo = -36;
+byte positivo = 86;
+byte pequeño = 8;
+
+// Valores máximos y mínimos
+
+byte mayor = Byte.MAX_VALUE; // 127
+byte menor = Byte.MIN_VALUE; // -128
+</code></pre>
+<p>El valor por defecto de un <code>byte</code> es <code>0</code>.</p>
+<a class="header" href="#el-tipo-short" id="el-tipo-short"><h2>El tipo short</h2></a>
+<p>Un <code>short</code> es un entero de 16 bits con signo, posee un valor mínimo de \(-215 (-32,768)\) y un valor máximo de \(215 -1 (32,767)\).</p>
+<pre><code class="language-java">short ejemplo = -48;
+short ejemplo2 = 987;
+</code></pre>
+<p>El valor por defecto de un <code>short</code> es <code>0</code>.</p>
+<a class="header" href="#cadenas-de-carácteres" id="cadenas-de-carácteres"><h2>Cadenas de carácteres</h2></a>
+<p>A diferencia de otros lenguajes de programación como C, Java posee la
+habilidad de manejar cadenas de texto, las cuales se resumen en ser un
+arreglo finito o infinito de caracteres. <strong>NO SON UN TIPO DE DATO PRIMITIVO</strong>.</p>
+<p>Están almacenadas en la clase (<code>java.lang.String</code>).</p>
+<p>En Java las Strings son inmutables, eso significa que una vez que el constructor
+de un objeto termina de ejecutarse, la instancia no se puede alterar.</p>
+<p>Algo útil cuando queremos pasar referencias a los objetos cercanos.</p>
+<p>Para declarar cadenas de carácteres en Java solo usamos la palabra reservada
+<code>String</code>.</p>
+<pre><code class="language-java">String ejemplo = &quot;Las cadenas en Java son geniales!&quot;;
+String pregunta = &quot;¿o no?&quot;;
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../00-Introduccion/02-Estructura.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../00-Introduccion/04-condicionales.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../00-Introduccion/02-Estructura.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../00-Introduccion/04-condicionales.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

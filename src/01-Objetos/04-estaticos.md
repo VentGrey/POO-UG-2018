@@ -1,1 +1,0 @@
-# Métodos y atributos estáticos
