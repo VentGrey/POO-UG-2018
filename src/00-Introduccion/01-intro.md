@@ -54,3 +54,40 @@ hasta las 2 sondas exploradoras de marte envíadas en 2004.
 
 Irónicamente Java es usado en muchos tipos de sistemas computacionales y fué
 olvidado en la web, lo que le dió tanta popularidad en un principio.
+
+# Conceptos básicos de la programación orientada a objetos
+
+Programación orientada a objetos ¿qué es?. Nos pofremos encontrar con algunos
+conceptos que son utilizados de manera cotidiana, es importante poder
+familiarizarse con estos conceptos para poder interpretar con mayor facilidad
+esta nueva "metodología" de programación. Primero facilitaremos el significado
+mas representatifo que proporciona la RAE ( *Real Academia Española* )
+y al final se expondrá un concepto más concreto y práctico.
+
+**Paradigma**: *"Teoría o conjunto de teorías cuyo núcleo central se acepta sin
+cuestionar y que se suministra la base y modelo para resolver problemas y
+avanzar en el conocimiento"*
+
+Fuente:(RAE: *http://dle.rae.es/?id=RpXSRZJ*)
+
+De manera que podemos definir:
+*Paradigma es el modo o la forma de hacer algo*. Lo podremos ver normalmente
+utilizado en el paradigma de programación orientado a objetos.
+
+Concretizando:
+**Abstracción es lo percibido de una realidad en determinado contexto**.
+Tomemos como ejemplo las siguientes palabras y posteriormente explicaremos los
+contextos:
+ * Planta
+ * Nube
+ * Vehículo
+ * Ratón
+ * Llave
+
+Lo primero que podria llegar a nuestra mente con la primera palabra (Planta) es
+un ser vivo con hojas color verde, que posee un tallo y raíces, sin embargo,
+existen diferentes tipos de plantas en este enfoque. Pero ¿qué sucede si le
+preguntamos a un electricista? ¿A un trabajador en el área técnica de proceso
+de purificación del agua? Posiblemente estén pensando que "Planta" se refiere a
+las instalaciones donde tienen la maquinaria para generar energía o para
+purificar el agua (respectivamente).
