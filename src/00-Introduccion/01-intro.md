@@ -62,4 +62,42 @@ En la programación Orientada a Objetos, encontraremos algunos conceptos cotidia
 metodología de programación.
 
 Las siguientes definiciones son tomadas de la *Real Academia Española* y del
-diccionario Larousse
+diccionario *Larousse*, posteriormente se expondrá un concepto más concreto
+y práctico, acompañado de algunos ejemplos.
+
+**Paradigma**: " *Teoría o conjunto de teorías cuyo núcleo central se acepta sin cuestionar y que suministra base y modelo para resolver problemas y avanzar en el conocimiento* ".
+
+De manera concreta podemos definir:
+**Paradigma es el modo o la forma natural de hacer algo**. Lo podemos ver
+normalmente utilizado en "Paradigma de la Programación Orientada a Objetos"
+
+**Abstracción**: " *Separar por medio de una operación intelectual un rasgo o una cualidad de algo para analizarlo aisladamente o considerarlo en su pura esencia o noción* ".
+
+## Veamos un ejemplo
+
+Lo primero que se nos podría venir a la mente con la palabra "Planta" es un
+ser vivo, con hojas color verde, que posee un tallo y raíces, sin embargo, en
+este enfoque existe una gran diversidad de plantas. Ahora, si le pedimos imaginar
+la palabra "Planta" a un electricista o a un empleado que trabaja como técnico
+en el proceso de purificación del agua, posiblemente ambos imaginarán cosas
+totalmente diferentes, el primero podría imaginar la localización donde toda
+la maquinaria y el cableado se encuentra para abastecer de luz eléctrica a
+una región, el otro podría imaginar su central de agua donde ésta es purificada.
+
+Si le preguntamos a un niño o a un adulto que nos describa la palabra "Nube" y
+ellos no estén familiarizados con la tecnología, nos podrían decir que es
+el agua en su tercer estado de la materia (gas) y que se encuentra en el cielo.
+
+Sin embargo, si le preguntamos a una persona muy familiarizada con la tecnología
+ y el internet de las cosas entonces podría contestarnos que "Nube" es aquel
+ data center donde se almacenan y respaldan datos de diversos usuarios.
+
+> Otros mas extremos podrían decirnos que "Nube" es el método de transporte
+> volador de un personaje muy famoso.
+
+Si una persona que vive en la ciudad cierra los ojos por uno o dos minutos y
+piensa en un vehículo, lo primero que podria imaginar seria un medio de
+transporte con cuatro ruedas, un motor y un armazón probablemente de color
+rojo. Sin embargo, si preguntamos lo mismo a alguien que vive en una zona
+costera o muy cercana a la playa y que esté relacionada con actividades
+pesqueras podrían imaginar un barco o un bote.
