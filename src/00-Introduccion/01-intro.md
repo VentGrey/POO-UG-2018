@@ -100,4 +100,38 @@ piensa en un vehículo, lo primero que podria imaginar seria un medio de
 transporte con cuatro ruedas, un motor y un armazón probablemente de color
 rojo. Sin embargo, si preguntamos lo mismo a alguien que vive en una zona
 costera o muy cercana a la playa y que esté relacionada con actividades
-pesqueras podrían imaginar un barco o un bote.
+pesqueras podrían imaginar un barco o un bote ya que también son vehículos
+submarinos. Si abrimos mas los paronarmas tenemos los aviones, helicópteros,
+naves y cohetes espaciales, todos estos son vehículos, cada uno con sus
+diferentes características( **Atributos** ) y funciones ( **Métodos** ).
+
+## ¿Modularidad?
+
+El sistema de producción modular, ha tenido su origen desde hace muchos años
+atrás, vino a revolucionar la forma de producción, abaratando sus costos
+y facilitanto a la industria, el proceso de la producción en masa, por
+ejemplo, antes era muy costoso fabricar una pistola artesanal, sin embargo,
+cuando alguien decidió modular el objeto en varias partes y enfocarse
+exclusivamente en la fabricación y producción de los módulos para
+posteriormente ensamblarlos, obtuvieron excelentes resultados en tiempo,
+calidad del producto y costos de inversión. Ademas, dio origen a la producción
+de estándares, permitiendo el reemplazo de ciertos módulos para el proceso de
+mantenimiento y mejoras.
+
+Retomando el tema del revólver artesanal, intentemos tomar el enfoque de la
+programación, inicialmente el proceso de producción del software era de
+manera estructurada, es decir era muy costoso, eso sin considerar el proceso
+de mantenimiento. Imagina revisar un archivo con 135,000 líneas de código,
+buscar errores, corregirlos, mantener actualizado el software, no era una
+tarea fácil ni óptima, demás, sería muy difícil que alguien intentara
+reutilizar el código, pues el software está hecho para satisfacer las
+necesidades específicas de un cliente.
+
+Por lo tanto, la modularidad en la programación nos otorga múltiples ventajas
+como:
+ * Simplificación de un problema complejo en varios subproblemas más simples
+ * Reutilización de código
+ * Facilidad en el proceso de mantenimiento y producción.
+ * Reducción de líneas de código.
+ * Facilidad en la legibilidad y compresión del código.
+
