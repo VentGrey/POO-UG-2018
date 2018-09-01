@@ -135,3 +135,5 @@ como:
  * Reducción de líneas de código.
  * Facilidad en la legibilidad y compresión del código.
 
+Con ello podemos ver una ligera introducción a lo que haremos dentro de
+éste libro, aprenderemos a programar orientado a objetos, así que manos a la obra.
